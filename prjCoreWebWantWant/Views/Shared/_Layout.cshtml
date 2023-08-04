@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WantWant - 專家接案，打工兼差</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/prjCoreWebWantWant.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Mbootstrap.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Mstyle.css" asp-append-version="true" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/Images/LOGO.png" class="img-fluid" alt="Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">                        
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">找工作</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">找專家</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">部落格</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">                       
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="" asp-action="">會員專區</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary me-md-2" asp-area="" asp-controller="" asp-action="">註冊</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-primary" asp-area="" asp-controller="" asp-action="">登入</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+@*    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>*@
+    @RenderBody()
+    <footer id="footer" class="pt-5 bg-color text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <img src="~/Images/LOGO.png" class="img-fluid" alt="Logo"><br>
+                    <a href="mailto:service@wantwant.com">service@wantwant.com</a>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h5 class="text-uppercase fw-bold">Company</h5>
+                    <ul class="footer-menu py-3">
+                        <li>
+                            @Html.ActionLink("Careers", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("About Us", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Blog", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Press", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Bonus", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h5 class="text-uppercase fw-bold">Product</h5>
+                    <ul class="footer-menu py-3">
+                        <li>
+                            @Html.ActionLink("Enterprice", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Pricing", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Security", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h5 class="text-uppercase fw-bold">Resource</h5>
+                    <ul class="footer-menu py-3">
+                        <li>
+                            @Html.ActionLink("Guilde", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Help Center", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("API", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Events", "List", "Customer", new { area = "" }, new { @class = "a-link" })
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-end bg-dark mt-5 py-2">
+            <p class="text-center">&copy; @DateTime.Now.Year 我的 ASP.NET 應用程式 <span id="yearShow"></span></p>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

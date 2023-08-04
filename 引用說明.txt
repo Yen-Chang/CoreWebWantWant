@@ -1,0 +1,16 @@
+Layout
+引用路徑：Views->Shared
+檔名：_Layout.cshtml
+
+css樣式表
+引用路徑：wwwroot->css
+檔名：Mbootstrap.css
+檔名：Mstyle.css
+
+圖片
+引用路徑：wwwroot
+檔名：Images
+
+首頁
+引用路徑：Views->Home
+檔名：Index.cshtml
