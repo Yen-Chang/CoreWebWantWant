@@ -11701,11 +11701,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Desktop\\slnCoreWebWantWant\\prjCoreWebWantWant\\prjCoreWebWantWant.csproj",
+      "projectUniqueName": "E:\\Desktop\\CoreWebWantWant\\prjCoreWebWantWant\\prjCoreWebWantWant.csproj",
       "projectName": "prjCoreWebWantWant",
-      "projectPath": "E:\\Desktop\\slnCoreWebWantWant\\prjCoreWebWantWant\\prjCoreWebWantWant.csproj",
+      "projectPath": "E:\\Desktop\\CoreWebWantWant\\prjCoreWebWantWant\\prjCoreWebWantWant.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "E:\\Desktop\\slnCoreWebWantWant\\prjCoreWebWantWant\\obj\\",
+      "outputPath": "E:\\Desktop\\CoreWebWantWant\\prjCoreWebWantWant\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

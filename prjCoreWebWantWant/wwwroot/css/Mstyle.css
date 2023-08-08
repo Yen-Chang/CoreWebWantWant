@@ -81,12 +81,22 @@ a:link {
     color: #d8dadf;
 }
 
+.overlay {
+    position: relative;
+    z-index: 0;
+}
+
 .job_searcing_wrap {
     position: relative;
     z-index: 0;
     padding: 116px 0;
     background: #90B6D9;
 }
+
+    .job_searcing_wrap .searching_text {
+        position: relative;
+        z-index: 8;
+    }
 
 .boxed-btn3 {
     background: #00D363;
